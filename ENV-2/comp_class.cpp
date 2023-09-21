@@ -27,7 +27,7 @@ public:
 		return x;
 	};
 	unsigned int Abs(Complex x) {
-		unsigned int abs = std::sqrt((x.re * x.re) + (x.im * x.im));
+		unsigned int abs = sqrt((x.re * x.re) + (x.im * x.im));
 		return abs;
 	};
 };
