@@ -42,7 +42,7 @@ int main(int argc, char** argv){
         exit(1);
     }
     
-    int writeen_bytes, count;
+    int writeen_bytes, count = 0;
     while(count < file_length){ // Write '\0's to file
          writeen_bytes = write(file_desc, buffer, BUF_SIZE);
          if(writeen_bytes < 0){
